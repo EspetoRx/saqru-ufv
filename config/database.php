@@ -61,6 +61,7 @@ return [
             'database' => 'heroku_dea7e9122434c82',
             'username' => 'bef73edd717253',
             'password' => '98f5c541',
+            'port' => '3306',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
