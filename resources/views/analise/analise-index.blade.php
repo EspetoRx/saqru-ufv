@@ -27,7 +27,7 @@
                                 <canvas id="graficoCardapio" width="100%" height="55%" style="margin-top: 10px;"></canvas>
                                 <canvas id="graficoHigiene" width="100%" height="55%" style="margin-top: 10px;"></canvas>
                                 <canvas id="graficoAmbiente" width="100%" height="55%" style="margin-top: 10px;"></canvas>
-                                <div id="graficos"></div>
+                                <div id="graficos2"></div>
                             </div>
                         </div>
                     </div>
