@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        $newuser = new User();
+        /*$newuser = new User();
         $newuser->name = "Lucas Carvalho de Oliveira";
         $newuser->email = "lcdo2395@gmail.com";
         $newuser->password = Hash::make('lucas2308');
@@ -31,6 +31,11 @@ class DatabaseSeeder extends Seeder
         $tipo3 = new TipoRefeicao();
         $tipo3->descricao = "Jantar";
         $tipo3->id = 3;
-        $tipo3->save();
+        $tipo3->save();*/
+        $newuser = new User();
+        $newuser->name = "Administrador";
+        $newuser->email = "adm@ufv.com";
+        $newuser->password = Hash::make('adm12345');
+        $newuser->save();
     }
 }

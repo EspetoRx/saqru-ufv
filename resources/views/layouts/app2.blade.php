@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="{{asset('/css/app.css')}}">
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
+    <link rel="shortcut icon" href="{{asset('/images/logo_ufv.ico')}}" type="image/x-icon"/>
 
 </head>
 <body>
@@ -19,7 +20,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-style">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}"><img src="{{asset('/images/logo_ufv.png')}}" class="logo_ufv" alt="Ir para a Página Inicial"></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src="{{asset('/images/logo_ufv.png')}}" class="logo_ufv" alt="Ir para a Página Inicial"> SAQS R.U.</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
