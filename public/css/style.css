@@ -1,0 +1,163 @@
+ul{
+    margin-bottom: 10px !important;
+}
+
+.nav-item{
+    padding-left: 5px;
+}
+
+.navbar-style{
+    background-color: transparent !important;
+    margin-top: 5px;
+}
+
+.logo_ufv{
+    width: 75px;
+}
+
+.btn-first{
+    background-color: rgba(121, 29, 31, 1) !important;
+    color: white !important;
+}
+
+.btn-first:hover{
+    background-color: rgba(94, 23, 24, 1);
+    color: white !important;
+}
+
+.btn-first.focus:active,
+.btn-first:active:focus{
+    background-color: rgba(94, 23, 24, 1);
+    color: white !important;
+}
+
+.btn-first:focus{
+    background-color: rgba(94, 23, 24, 1);
+    color: white !important;
+}
+
+.cardapio-title{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+}
+
+.password-recover{
+    color: rgba(121, 29, 31, 1);
+}
+
+.password-recover:hover{
+    text-decoration: none !important;
+    color: rgba(121, 29, 31, 1);
+    border: 1px solid rgba(121, 29, 31, 1);
+}
+
+.contato{
+    color: rgba(121, 29, 31, 1);
+}
+
+.contato:hover{
+    color: rgba(121, 29, 31, 1);
+    text-decoration: none !important;
+}
+
+.table-margin{
+    margin-top: 15px;
+}
+
+.pagination-eita{
+    float: right !important;
+}
+
+.page-link{
+    color: rgba(121, 29, 31, 1) !important;
+}
+
+.page-link:hover{
+    background-color: #cf7f80 !important;
+}
+
+.page-item.active > .page-link{
+    background-color: #cf7f80 !important;
+    border-color: #cf7f80;
+}
+
+.page-link:focus{
+    box-shadow: none;
+}
+
+.btn-warning{
+    background-color: rgba(195,166,59, 1);
+    border: none;
+}
+
+.btn-danger{
+    background-color: rgba(121, 29, 31, 1);
+    border: none;
+}
+
+.btn-warning:hover{
+    background-color: rgba(195,166,59, 1);
+}
+
+.btn-danger:hover{
+    background-color: rgba(121, 29, 31, 1);
+}
+
+.sastar1,
+.castar1,
+.histar1,
+.amstar1{
+    color: rgba(195,166,59, 1);
+}
+
+.sastar1:hover,
+.sastar2:hover,
+.sastar3:hover,
+.sastar4:hover,
+.sastar5:hover{
+    color: rgba(195,166,59, 1);
+}
+
+.castar1:hover,
+.castar2:hover,
+.castar3:hover,
+.castar4:hover,
+.castar5:hover{
+    color: rgba(195,166,59, 1);
+}
+
+.histar1:hover,
+.histar2:hover,
+.histar3:hover,
+.histar4:hover,
+.histar5:hover{
+    color: rgba(195,166,59, 1);
+}
+
+.amstar1:hover,
+.amstar2:hover,
+.amstar3:hover,
+.amstar4:hover,
+.amstar5:hover{
+    color: rgba(195,166,59, 1);
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .margin-top-small{
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {}
+
+
+@media only screen and (max-width: 992px) {}
+
+
+@media only screen and (max-width: 1200px) {}
