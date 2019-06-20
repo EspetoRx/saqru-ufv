@@ -18,7 +18,7 @@ class RefeicaoController extends Controller
     {
         //
         $refeicoes = Refeicao::orderBy('dia', 'desc')->paginate(3);
-        return view('cardapio.cardapio-index', compact('refeicoes', 'aux'));
+        return view('cardapio.cardapio-index', compact('refeicoes'));
     }
 
     /**
