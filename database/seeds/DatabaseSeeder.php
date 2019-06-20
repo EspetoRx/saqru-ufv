@@ -22,12 +22,15 @@ class DatabaseSeeder extends Seeder
         $newuser->save();
         $tipo = new TipoRefeicao();
         $tipo->descricao = "Café da Manhã";
+        $tipo->id = 1;
         $tipo->save();
         $tipo2 = new TipoRefeicao();
         $tipo2->descricao = "Almoço";
+        $tipo2->id = 2;
         $tipo2->save();
         $tipo3 = new TipoRefeicao();
         $tipo3->descricao = "Jantar";
+        $tipo3->id = 3;
         $tipo3->save();
     }
 }

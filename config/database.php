@@ -1,5 +1,6 @@
 <?php
 
+
 return [
 
     /*
@@ -13,7 +14,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'heroku'),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,6 +54,17 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+
+        'heroku' => array(
+            'driver' => 'mysql',
+            'host' => 'us-cdbr-iron-east-02.cleardb.net',
+            'database' => 'heroku_dea7e9122434c82',
+            'username' => 'bef73edd717253',
+            'password' => '98f5c541',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+        ),
 
         'pgsql' => [
             'driver' => 'pgsql',
