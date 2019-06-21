@@ -7,18 +7,18 @@ var myChart = new Chart(ctx, {
             label: 'Média da Votação coletada para este dia',
             data: [0, 0, 0, 0, 0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(0, 0, 0, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(0, 0, 0, 1)',
             ],
             borderWidth: 1
         }]
@@ -47,7 +47,11 @@ function ajaxcardapio(){
         data: {day: $("#data_cardapio").val()},
         url: "/cardapio_dia",
         datatype: "json",
+        beforeSend: function() {
+            $('#mensagem_cardapio').show();
+        },
         success: function(cardapio) {
+            $('#mensagem_cardapio').hide();
             var parser = JSON.parse(cardapio);
             if (typeof parser !== 'undefined' && parser.length > 0) {
             var string = '<div>';
@@ -92,12 +96,17 @@ function ajaxvotacao(){
         },
         url: "/refeicao_dia",
         datatype: "json",
+        beforeSend: function() {
+            $('#mensagem_grafico').show();
+        },
         success: function(response) {
             if(response == 'null'){
                 $('#graficos').hide();
+                $('#mensagem_grafico').hide();
                 $('#graficos2').html("<h5 class='text-center margin-top-10'>Desculpe-nos, não encontramos votação para esta combinação de refeição e dia.</h5>");
             }else{
                 $('#graficos2').html("");
+                $('#mensagem_grafico').hide();
                 $('#graficos').show();
                 var sa = (response['estrelaSabor1']*1+response['estrelaSabor2']*2+response['estrelaSabor3']*3+response['estrelaSabor4']*4+response['estrelaSabor5']*5)/(1+2+3+4+5);
                 var ca = (response['estrelaCardapio1']*1+response['estrelaCardapio2']*2+response['estrelaCardapio3']*3+response['estrelaCardapio4']*4+response['estrelaCardapio5']*5)/(1+2+3+4+5);
@@ -110,6 +119,12 @@ function ajaxvotacao(){
         }
     });
 }
+
+$( window ).on("load", function() {
+    this.setTimeout(function(){
+        $(".se-pre-con").fadeOut("slow");
+    }, 2000);
+});
 
 $( document ).ready(function() {
     ajaxcardapio();

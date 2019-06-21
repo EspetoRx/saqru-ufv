@@ -147,12 +147,54 @@ ul{
     margin-top: 10px;
 }
 
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background: url('../images/logo_ufv.png') center no-repeat #fff;
+    background-size: 10%;
+}
+
+.loader {
+    border: 4px solid rgb(195,166,59);
+    border-radius: 50%;
+    border-top: 4px solid rgb(121, 29, 31);
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 @media only screen and (max-width: 576px) {
     .margin-top-small{
         margin-top: 10px;
     }
 }
 
+.carregando{
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {}
 

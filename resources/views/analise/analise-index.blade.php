@@ -23,6 +23,14 @@
                                         <option value="3">Jantar</option>
                                     </select>
                                 </div>
+                                <div id="mensagem_grafico" class="carregando">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center" style="margin-top: 40px;">
+                                            <h3>Carregando informações de votações.</h3>
+                                            <div class="loader"></div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <canvas id="graficoSabor" width="100%" height="55%" style="margin-top: 10px;"></canvas>
                                 <canvas id="graficoCardapio" width="100%" height="55%" style="margin-top: 10px;"></canvas>
                                 <canvas id="graficoHigiene" width="100%" height="55%" style="margin-top: 10px;"></canvas>

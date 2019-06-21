@@ -7,18 +7,20 @@ var SaborAlimento = new Chart(ctx, {
             label: 'Sabor do Alimento',
             data: [0,0,0,0,0,0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(0, 0, 0, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(0, 0, 0, 1)',
             ],
             borderWidth: 1
         }]
@@ -43,18 +45,20 @@ var Cardapio = new Chart(ctx2, {
             label: 'Cardapio',
             data: [0,0,0,0,0,0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(0, 0, 0, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(0, 0, 0, 1)',
             ],
             borderWidth: 1
         }]
@@ -79,18 +83,20 @@ var Higiene = new Chart(ctx3, {
             label: 'Higiene do Local',
             data: [0,0,0,0,0,0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(0, 0, 0, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(0, 0, 0, 1)',
             ],
             borderWidth: 1
         }]
@@ -115,18 +121,20 @@ var Ambiente = new Chart(ctx4, {
             label: 'Ambiente',
             data: [0,0,0,0,0,0],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(195, 166, 59, 0.3)',
+                'rgba(121, 29, 31, 0.3)',
+                'rgba(0, 0, 0, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(195, 166, 59, 1)',
+                'rgba(121, 29, 31, 1)',
+                'rgba(0, 0, 0, 1)',
             ],
             borderWidth: 1
         }]
@@ -158,14 +166,19 @@ function ajaxvotacao(){
         },
         url: "/refeicao_dia",
         datatype: "json",
+        beforeSend: function() {
+            $('#mensagem_grafico').show();
+        },
         success: function(response) {
             if(response == 'null'){
+                $('#mensagem_grafico').hide();
                 $('#graficoSabor').hide();
                 $('#graficoCardapio').hide();
                 $('#graficoHigiene').hide();
                 $('#graficoAmbiente').hide();
                 $('#graficos2').html("<h5 class='text-center margin-top-10'>Desculpe-nos, não encontramos votação para esta combinação de refeição e dia.</h5>");
             }else{
+                $('#mensagem_grafico').hide();
                 $('#graficos2').html("");
                 $('#graficoSabor').show();
                 $('#graficoCardapio').show();

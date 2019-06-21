@@ -10,9 +10,15 @@
 
         <link rel="stylesheet" href="{{asset('/css/app.css')}}">
         <link rel="stylesheet" href="{{asset('/css/style.css')}}">
-        <link rel="shortcut icon" href="{{asset('/images/logo_ufv.ico')}}" type="image/x-icon"/>
+        <link rel="shortcut icon" href="{{asset('images/logo_ufv.ico')}}" type="image/x-icon"/>
     </head>
     <body>
+        <div class="se-pre-con">
+            <div class="row" style="margin-top:100px;">
+                <div class="col-md-12 text-center"><h4>Sistema de Avaliação da Qualidade de Serviço<br>do Restaurante Universitário</h4></div>
+                <div class="loader"></div>
+            </div>
+        </div>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-style">
             <a class="navbar-brand" href="/"><img src="{{asset('/images/logo_ufv.png')}}" class="logo_ufv" alt="Ir para a Página Inicial"> SAQS R. U.</a>
@@ -57,6 +63,14 @@
                             </select>
                         </div>
                     </div>
+                    <div id="mensagem_grafico" class="carregando">
+                        <div class="row">
+                            <div class="col-md-12 text-center" style="margin-top: 40px;">
+                                <h3>Carregando informações de votações.</h3>
+                                <div class="loader"></div>
+                            </div>
+                        </div>
+                    </div>
                     <canvas id="graficos" width="100%" height="55%"></canvas>
                     <div id="graficos2"></div>
                 </article>
@@ -64,6 +78,14 @@
                     <h2 class="text-center">Cardápio</h2>
                     <label for="data_cardapio">Escolha uma data:</label>
                     <input type="date" class="form-control" id="data_cardapio" value="{{Carbon\Carbon::now()->format('Y-m-d')}}" min="{{Carbon\Carbon::now()->format('Y-m-d')}}" onchange="ajaxcardapio()">
+                    <div id="mensagem_cardapio" class="carregando">
+                            <div class="row">
+                                <div class="col-md-12 text-center" style="margin-top: 40px;">
+                                    <h3>Carregando informações de votações.</h3>
+                                    <div class="loader"></div>
+                                </div>
+                            </div>
+                        </div>
                     <div id='include_cardapio'></div>
                 </aside>
             </div>

@@ -19,7 +19,7 @@
                             <a href="/cardapio"><button type="button" class="btn btn-first margin-top-small"><i class="fas fa-utensils"></i><br>Gerenciar Cardápio</button></a>
                         </div>
                         <div class="col-md-4">
-                            <a href="/analise"><button type="button" class="btn btn-first margin-top-small"><i class="far fa-chart-bar"></i><br>Analizar Dados</button></a>
+                            <a href="/analise"><button type="button" class="btn btn-first margin-top-small"><i class="far fa-chart-bar"></i><br>Analisar Dados</button></a>
                         </div>
                         <div class="col-md-4">
                             <a href="/votacao"><button type="button" class="btn btn-first margin-top-small"><i class="fas fa-star"></i><br>Gerenciar Votação</button></a>
