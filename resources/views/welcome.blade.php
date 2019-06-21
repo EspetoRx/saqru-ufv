@@ -10,7 +10,7 @@
 
         <link rel="stylesheet" href="{{asset('/css/app.css')}}">
         <link rel="stylesheet" href="{{asset('/css/style.css')}}">
-        <link rel="shortcut icon" href="{{asset('images/logo_ufv.ico')}}" type="image/x-icon"/>
+        <link rel="shortcut icon" href="{{asset('images/logo_ufv.ico')}}" type="image/x-icon">
     </head>
     <body>
         <div class="se-pre-con">

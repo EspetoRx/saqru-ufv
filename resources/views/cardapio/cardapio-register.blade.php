@@ -22,19 +22,19 @@
                             <div class="offset-md-3 col-md-6">
                                 <div class="form-group">
                                     <label for="cafe">Café da Manha</label>
-                                    <textarea name="cafe" id="cafe" rows="4" class="form-control" required></textarea>
+                                    <textarea name="cafe" id="cafe" rows="4" class="form-control" ></textarea>
                                 </div>
                             </div>
                             <div class="offset-md-3 col-md-6">
                                 <div class="form-group">
                                     <label for="almoco">Almoço</label>
-                                    <textarea name="almoco" id="almoco" rows="4" class="form-control" required></textarea>
+                                    <textarea name="almoco" id="almoco" rows="4" class="form-control" ></textarea>
                                 </div>
                             </div>
                             <div class="offset-md-3 col-md-6">
                                 <div class="form-group">
                                     <label for="jantar">Jantar</label>
-                                    <textarea name="jantar" id="jantar" rows="4" class="form-control" required></textarea>
+                                    <textarea name="jantar" id="jantar" rows="4" class="form-control" ></textarea>
                                 </div>
                             </div>
                             <div class="offset-md-3 col-md-6 table-margin">

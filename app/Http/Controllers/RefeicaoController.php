@@ -43,9 +43,6 @@ class RefeicaoController extends Controller
         //
         $validatedData = $request->validate([
             'dia' => 'required|date',
-            'cafe' => 'required',
-            'almoco' => 'required',
-            'jantar' => 'required'
         ]);
 
         $resposta = Refeicao::where('dia', $request->dia)->get();
@@ -58,17 +55,33 @@ class RefeicaoController extends Controller
             $almoco = Refeicao::where('dia', $request->dia)->where('tipo_refeicao', 2)->first();
             $jantar = Refeicao::where('dia', $request->dia)->where('tipo_refeicao', 3)->first();
         }
-        $cafe->tipo_refeicao = 1;
-        $cafe->cardapio = $request->cafe;
-        $cafe->dia = $request->dia;
+//        dd($cafe);
+        if(isset($request->cafe) && $request->cafe != null){
+            if($cafe == null){
+                $cafe = new Refeicao();
+            }
+            $cafe->tipo_refeicao = 1;
+            $cafe->cardapio = $request->cafe;
+            $cafe->dia = $request->dia;
+        }
         
+        if(isset($request->almoco) && $request->almoco != null){
+            if($almoco == null){
+                $almoco = new Refeicao();
+            }
         $almoco->tipo_refeicao = 2;
         $almoco->cardapio = $request->almoco;
         $almoco->dia = $request->dia;
-        
+        }
+
+        if(isset($request->jantar) && $request->jantar != null){
+            if($jantar == null){
+                $jantar = new Refeicao();
+            }
         $jantar->tipo_refeicao = 3;
         $jantar->cardapio = $request->jantar;
         $jantar->dia = $request->dia;
+        }
 
         $cafe->save();
         $almoco->save();
