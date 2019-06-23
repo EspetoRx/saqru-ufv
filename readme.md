@@ -17,6 +17,9 @@
 <img src="public\images\slides\Slide10.PNG" width="100%">
 <img src="public\images\slides\Slide11.PNG" width="100%">
 <img src="public\images\slides\Slide12.PNG" width="100%">
+<img src="public\images\slides\Slide13.PNG" width="100%">
+<img src="public\images\slides\Slide14.PNG" width="100%">
+<img src="public\images\slides\Slide15.PNG" width="100%">
 
 
 ## Learning Laravel

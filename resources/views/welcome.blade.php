@@ -4,13 +4,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Lucas Carvalho de Oliveira">
+        <meta name="description" content="Sistema de Avaliação da Qualidade de Serviço do Restaurante Universitário">
+        <meta name="keywords" content="qualidade, Qualidade, avaliação, Avaliação, Restaurante, restaurante, Universitário, universitário">
+        <link rel="icon" href="{{asset('images/logo_ufv.ico')}}">
         @csrf
 
         <title>Sistema de Avaliação da Qualidade de Serviço do R.U.</title>
 
         <link rel="stylesheet" href="{{asset('/css/app.css')}}">
         <link rel="stylesheet" href="{{asset('/css/style.css')}}">
-        <link rel="shortcut icon" href="{{asset('/images/logo_ufv.ico')}}" type="image/x-icon">
     </head>
     <body>
         <div class="se-pre-con">
