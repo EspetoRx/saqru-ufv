@@ -3,19 +3,21 @@
 <h1 align="center">Sistema de Avaliação da<br/>Qualidade de Serviço do<br/>Restaurante Universitário</h1>
 
 
-## About Laravel
+## Apresentação da Aplicação
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+<img src="public\images\slides\Slide1.PNG" width="100%">
+<img src="public\images\slides\Slide2.PNG" width="100%">
+<img src="public\images\slides\Slide3.PNG" width="100%">
+<img src="public\images\slides\Slide4.PNG" width="100%">
+<img src="public\images\slides\Slide5.PNG" width="100%">
+<img src="public\images\slides\Slide6.PNG" width="100%">
+<img src="public\images\slides\Slide7.PNG" width="100%">
+<img src="public\images\slides\Slide8.PNG" width="100%">
+<img src="public\images\slides\Slide9.PNG" width="100%">
+<img src="public\images\slides\Slide10.PNG" width="100%">
+<img src="public\images\slides\Slide11.PNG" width="100%">
+<img src="public\images\slides\Slide12.PNG" width="100%">
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
 ## Learning Laravel
 
