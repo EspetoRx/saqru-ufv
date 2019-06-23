@@ -4,7 +4,7 @@
 
 
 ## Apresentação da Aplicação
-
+<a href="public\slide.pdf">Acesse aqui a apresentação completa em PDF.</a>
 <img src="public\images\slides\Slide1.PNG" width="100%">
 <img src="public\images\slides\Slide2.PNG" width="100%">
 <img src="public\images\slides\Slide3.PNG" width="100%">
@@ -20,42 +20,43 @@
 <img src="public\images\slides\Slide13.PNG" width="100%">
 <img src="public\images\slides\Slide14.PNG" width="100%">
 <img src="public\images\slides\Slide15.PNG" width="100%">
+<img src="public\images\slides\Slide16.PNG" width="100%">
+<img src="public\images\slides\Slide17.PNG" width="100%">
+<img src="public\images\slides\Slide18.PNG" width="100%">
+<img src="public\images\slides\Slide19.PNG" width="100%">
+<img src="public\images\slides\Slide20.PNG" width="100%">
+<img src="public\images\slides\Slide21.PNG" width="100%">
+<img src="public\images\slides\Slide22.PNG" width="100%">
+
+## Instalação
+
+- Pré-requisitos:
+    - Composer;
+    - Laravel e seus pré-requisitos;
+    - Node JS e NPM;
+    - This package;
+
+- Comandos de instalação:
+    - composer install
+    - configure seu arquivo .env
+    - php artisan key:generate
+    - php artisan serve
+    - npm install
+    - npm run dev
+
+- Se quiser utilizar um banco de dados local
+    - Remova o heroku como database padrão do config/databases.php;
+    - Substitua-o pelo mysql;
+    - Crie o banco de dados em sua instância local do MySQL;
+    - configure seu arquivo .env com as credenciais necessárias;
+    - rode php artisan migrate;
+    - rode php artisan db:seed;
+
+- Seja feliz! =D
 
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Este software é de código aberto e está disponível sob a tutela da  [MIT license](https://opensource.org/licenses/MIT).
